@@ -99,7 +99,7 @@
 									<a class="nav-link" href="webhosting.html">Tech</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#">Aeroer.Live</a>
+									<a class="nav-link"  href="https://aeroer.live/" target="_blank">Aeroer.Live</a>
 								</li>
 							</ul>
 						</div>
@@ -180,6 +180,19 @@
 
 							<img src="images/posts/admin.png" class="figure-img img-fluid rounded" alt="Web-Hosting Admin Panel">
 							<figcaption class="figure-caption text-center">Admin Panel</figcaption>
+
+							<h3>Connecting a Custom Domain to the Website</h3>
+
+							<p>Let's go to the register Where we bought our domain , in my case main is <a href="https://www.namecheap.com/" target="_blank">Namecheap.</a>
+							Then go to domain manage on the DNS Setting remove the current name server Afterward go to Advanced DNS add new cName Record on the host fild type <strong>www</strong> and on the value field past website URL from the Drive To Web, remove the HTTPS prefix & remove everythings after drv.tw</p>
+
+							<p>Set the TTL to 30 minutes and save changes</p>
+
+							<p>Now add another record select URL redriect on the host fild type <strong>@</strong> and on the value field type http://domain.com (Your Domain Name) Now save changes</p>
+
+							<h4>Done</h4>
+
+							<p>Give some time maybe 1 Hours, Website will be live on your Domain </p>
 
 							
 						</div>
