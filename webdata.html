@@ -2,9 +2,9 @@
 <html lang="en-US">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Google Drive : Web Hosting</title>
+	<title>Google Sheets : Web Form Data Transfer</title>
 	<meta name="keywords" content="Aeroer, Aeroer.Blog, Web-Hosting Blog, Web-Host, GoogleDrive, Website-Hosting">
-	<meta name="description" content="This blog focuses on web hosting, particularly how we can utilize Google Drive as our hosting server for our website.">
+	<meta name="description" content="This blog focuses on Website Form Data Transfer to google sheet from a html code form">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 
@@ -130,7 +130,7 @@
 </header>
 
 	<!-- cover header -->
-    <section class="single-cover data-bg-image" data-bg-image="images/posts/googledrivehosting.jpg">
+    <section class="single-cover data-bg-image" data-bg-image="images/posts/HTMLForm-GoogleSheets.jpg">
 
         <div class="container-xl">
 
@@ -139,13 +139,13 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Aeroer Blog</a></li>
                         <li class="breadcrumb-item"><a href="#">Tech</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Google Drive : Web Hosting</li>
+                        <li class="breadcrumb-item active" aria-current="page">Web Form Data Transfer</li>
                     </ol>
                 </nav>
 
                 <!-- post header -->
                 <div class="post-header">
-                    <h1 class="title mt-0 mb-3">How to use Google Drive as Web Hosting (Free)</h1>
+                    <h1 class="title mt-0 mb-3">How to Send Data from HTML Form to Google Sheets</h1>
                 </div>
             </div>
 
@@ -164,56 +164,179 @@
                     <div class="post post-single">
 						<!-- post content -->
 						<div class="post-content clearfix">
-							<p>Hello everyone! Today, we're going to explore how to utilize Google Drive as our website hosting servers..</p>
+							<p>Hello everyone! Today, we're going to explore how to send data from HTML form to google sheets..</p>
 
-							<p>We must have a Gmail account. It's advisable to create a new Gmail account specifically for use as a web server. Next, we need to create a folder inside our Google Drive where we can store our website files.</p>
+							<p>In this image, we observe a form that I developed using HTML, CSS, and JavaScript. This form is versatile, suitable for integration into any static website. What's exciting is that I've implemented a mechanism to transfer user-submitted data directly to my personal Google Sheets file. This feature enhances the functionality of the form, allowing seamless data collection and management.</p>
 
 							<figure class="figure">
-								<img src="images/posts/googledrive.png" class="figure-img img-fluid rounded" alt="Google Drive Web Hosting">
-								<figcaption class="figure-caption text-center">Google Drive</figcaption>
+								<img src="images/posts/htmlformcode.jpg" class="figure-img img-fluid rounded" alt="HTML & CSS Form">
+								<figcaption class="figure-caption text-center">Html Form</figcaption>
 							</figure>
 
-							<p>Afterward, we upload all the website files to our Google Drive folder.Now, we require a shareable link to this folder, ensuring that the <strong>access level</strong>  is set to <a href="#">"Anyone with the link."</a></p> 
+							<p>Creating a Google Sheets file requires a Gmail account, ensuring that the Chrome profile you're using is logged in with a single Gmail ID</a></p> 
 
-							<img src="images/posts/googlefolder.png" class="figure-img img-fluid rounded" alt="Web-Host Floder Share Link">
-							<figcaption class="figure-caption text-center">Floder Share Link</figcaption>
+                            <br>
+							<img src="images/posts/googlesheets.jpg" class="figure-img img-fluid rounded" alt="Google Sheets">
+							<figcaption class="figure-caption text-center">Google Sheets</figcaption>
 							
-							<img src="images/posts/drivetoweb.jpg" class="rounded alignleft" alt="Google Drive To Web Host">
 							<br>
-							<p>Now, visit <a href="https://www.drv.tw/" target="_blank">https://www.drv.tw/</a></p>
+							<p>It's crucial to ensure that the titles of the columns in your Google Sheets file correspond accurately to the fields in your HTML form. In my case, for instance, the columns are labeled as 'Name', 'Phone', and 'Email'. This alignment is essential for maintaining clarity and coherence between the form submissions and the data recorded in the Google Sheets document.</p>
 
-							<p>Click on <a href="#">"Host on Google Drive,"</a> select your Gmail ID, then click on <a href="#">"Allow"</a> so that <strong>"Drive To Web"</strong> can access your Google Drive.</p>
+                            <br>
+                            <img src="images/posts/Appscript.jpg" class="figure-img img-fluid rounded" alt="Google Sheet : App Script">
+							<figcaption class="figure-caption text-center">App Script</figcaption>
 
-							<p>Now, please wait a few seconds for the process to complete. Afterward, we'll be able to see the <strong> Admin Panel </strong> page. Now, you should be able to locate our website link section under <strong>Your Web Pages</strong>.</p>
+                            <br>
+							<p>Afterwards, navigate to the <a href="#">'Extensions'</a> tab in the top section of your browser window, then select <a href="#">'App Script'</a> from the dropdown menu.</p>
 
-							<img src="images/posts/admin.png" class="figure-img img-fluid rounded" alt="Web-Hosting Admin Panel">
-							<figcaption class="figure-caption text-center">Admin Panel</figcaption>
 
-							<h3>Connecting a Custom Domain to the Website</h3>
+							<img src="images/posts/googlescript.jpg" class="figure-img img-fluid rounded" alt="Google Apps Script">
+							<figcaption class="figure-caption text-center">Google Apps Script</figcaption>
 
-							<p>Let's go to the register Where we bought our domain , in my case main is <a href="https://www.namecheap.com/" target="_blank">Namecheap.</a>
-							Then go to domain manage on the DNS Setting remove the current name server Afterward go to Advanced DNS, add new cName Record, On the host fild type <strong>www</strong> and on the value field past website URL from the "Drive To Web", remove the HTTPS prefix & remove everythings after drv.tw</p>
-							<img src="images/posts/namecheap.png" class="figure-img img-fluid rounded" alt="Namecheap Domain">
-							<figcaption class="figure-caption text-center">Namecheap</figcaption>
-
-							<p>Set the TTL to 30 minutes and save changes</p>
-
-							<p>Now add another record, Select URL redriect on the host fild type <strong>@</strong> & on the value field type <strong>http://domain.com (Your Domain Name)</strong> Now save changes</p>
-
-							<h4>Done</h4>
-
-							<p>Give some time maybe 1 Hours, Website will be live on your Domain </p>
-
+                            <br>
+							<p>Next, clear any existing code and replace it with the following script:</p>
 							
+                            <pre>
+                            <code>
+                                var sheetName = 'Sheet1'
+                                var scriptProp = PropertiesService.getScriptProperties()
+                        
+                                function intialSetup () {
+                                  var activeSpreadsheet = SpreadsheetApp.getActiveSpreadsheet()
+                                  scriptProp.setProperty('key', activeSpreadsheet.getId())
+                                }
+                        
+                                function doPost (e) {
+                                  var lock = LockService.getScriptLock()
+                                  lock.tryLock(10000)
+                        
+                                  try {
+                                    var doc = SpreadsheetApp.openById(scriptProp.getProperty('key'))
+                                    var sheet = doc.getSheetByName(sheetName)
+                        
+                                    var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0]
+                                    var nextRow = sheet.getLastRow() + 1
+                        
+                                    var newRow = headers.map(function(header) {
+                                      return header === 'timestamp' ? new Date() : e.parameter[header]
+                                    })
+                        
+                                    sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow])
+                        
+                                    return ContentService
+                                      .createTextOutput(JSON.stringify({ 'result': 'success', 'row': nextRow }))
+                                      .setMimeType(ContentService.MimeType.JSON)
+                                  }
+                        
+                                  catch (e) {
+                                    return ContentService
+                                      .createTextOutput(JSON.stringify({ 'result': 'error', 'error': e }))
+                                      .setMimeType(ContentService.MimeType.JSON)
+                                  }
+                        
+                                  finally {
+                                    lock.releaseLock()
+                                  }
+                                }
+                            </code>
+                            </pre>
+
+                            <br>
+                            <img src="images/posts/Appscriptsave.jpg" class="figure-img img-fluid rounded" alt="Google Apps Script Code">
+							<figcaption class="figure-caption text-center">Apps Script Save</figcaption>
+
+                            <br>
+							<p>After clicking on the <a href="#"> 'Save Icon' </a> to preserve the changes made to the script, proceed to <a href="#">'Run'</a> the code. This action executes the script, activating the functionality to transfer submitted form data to the designated Google Sheets file. Ensure that the script runs smoothly without errors before proceeding further with form submissions</p>
+
+                            <img src="images/posts/coderun.jpg" class="figure-img img-fluid rounded" alt="Google Apps Script Code">
+							<figcaption class="figure-caption text-center">Apps Script Code Run</figcaption>
+
+                            <br>
+                            <img src="images/posts/permission.jpg" class="figure-img img-fluid rounded" alt="Access Permission">
+							<figcaption class="figure-caption text-center">Access Permission</figcaption>
+
+                            <br>
+							<p>After saving the script, click on <a href="#">'Review Permissions'</a> This step is crucial as it ensures that the script has the necessary permissions to access and modify the Google Sheets file. Grant the required permissions for the script to function correctly.</p>
+                            
+                            <br>
+                            <img src="images/posts/advanced.jpg" class="figure-img img-fluid rounded" alt="Access Permission">
+							<figcaption class="figure-caption text-center">Access Permission</figcaption>
+
+                            <br>
+							<p>After selecting Review Permissions, proceed to click on <a href="#">'Advanced'</a>. This will allow you to review and configure advanced settings related to the permissions granted to the script.</p>
+
+                            <br>
+                            <img src="images/posts/gotodata.jpg" class="figure-img img-fluid rounded" alt="Access Permission">
+							<figcaption class="figure-caption text-center">Access Permission</figcaption>
+
+                            <br>
+							<p>After clicking on Advanced, locate and select the option labeled <a href="#">'Go to Data Submissions.'</a></p>
+
+                            <br>
+                            <img src="images/posts/Allow.jpg" class="figure-img img-fluid rounded" alt="Access Permission">
+							<figcaption class="figure-caption text-center">Access Permission</figcaption>
+
+                            <br>
+							<p>Now click on <a href="#">'Allow'</a>. This action grants the necessary permissions for the script to access and manage your Google Sheets file as specified. </p>
+
+                            <br>
+                            <img src="images/posts/newdeployment.jpg" class="figure-img img-fluid rounded" alt="New Deployment">
+							<figcaption class="figure-caption text-center">New Deployment</figcaption>
+
+                            <br>
+                            <p>Now navigate to the top right corner and click on <a href="#">'Deploy'</a>. Then, select <a href="#">'New Deployment'</a> from the dropdown menu.</p>
+
+                            <br>
+                            <img src="images/posts/newdeploymentapp.jpg" class="figure-img img-fluid rounded" alt="New Deployment">
+							<figcaption class="figure-caption text-center">Web App</figcaption>
+
+                            <br>
+                            <p>After selecting New Deployment, locate the <a href="#">'Gear Icon'</a> and click on it. From the options provided, select <a href="#">'Web App'</a>.</p>
+
+                            <br>
+                            <img src="images/posts/saveinfo.jpg" class="figure-img img-fluid rounded" alt="Configuration">
+							<figcaption class="figure-caption text-center">Configuration</figcaption>
+
+                            <br>
+                            <p>In the Configuration section, provide a name for your deployment, such as 'Data_Submission' Then, navigate to the <a href="#">'Who has Access'</a> section. Here, select the option for <a href="#">'Anyone'</a>. This configuration allows your web application to be accessed by anyone who has the link, facilitating the submission of form data to your Google Sheets document</p>
+
+                            <p>Now click on Deploy Button</p>
+
+                            <br>
+                            <img src="images/posts/webapp.jpg" class="figure-img img-fluid rounded" alt="Configuration">
+							<figcaption class="figure-caption text-center">Web App</figcaption>
+
+                            <br>
+                            <p>From this section, you'll find the <a href="#">'Web App URL'</a>. Copy this URL as it will serve as the endpoint for your HTML form submissions</p>
+
+                            <br>
+                            <img src="images/posts/code.jpg" class="figure-img img-fluid rounded" alt="VS Code">
+							<figcaption class="figure-caption text-center">JavaScript (JS)</figcaption>
+                            
+                            <br>
+							<p>To integrate the Web App URL into your HTML form, you need to find the JavaScript code responsible for handling the form submission. Once you locate this code, you'll replace the placeholder URL with the Web App URL you copied.     
+                            </p>
+                            <pre>
+                                <code>const scriptURL = 'https://script.google.com/macros/s/AKfycbxkgWotCMyvIKoT9aGtPCndZdHtHrq8i972t9CKAVjO6xC7T0I/exec'</code>
+                            </pre>
+
+                            <h3>Done</h3>
+
+                            <p>You've completed all the steps, your HTML form submissions will be directed to your Google Sheets file via the deployed script. Users filling out the form will have their submissions automatically recorded in the corresponding columns (such as Name, Phone, and Email) of your Google Sheets document.</p>
+
+                            <h4>Full Projects Link : <a href="https://github.com/AeroerMak/Web_Form_HTML-CSS" target="_blank">GitHub</a></h4>
+
+                        
+                            					
 						</div>
 						<!-- post bottom section -->
 						<div class="post-bottom">
 							<div class="row d-flex align-items-center">
 								<div class="col-md-6 col-12 text-center text-md-start">
 									<!-- tags -->
-									<a href="#" class="tag">#WebHost</a>
+									<a href="#" class="tag">#Web Development</a>
 									<a href="#" class="tag">#TechBlog</a>
-									<a href="#" class="tag">#FreeHosting</a>
+									<a href="#" class="tag">#Html Form</a>
 								</div>
 
 							</div>
@@ -225,7 +348,7 @@
 
 					<div class="about-author padding-30 rounded">
 						<div class="thumb">
-							<img src="images/other/avatar-about.png" alt="Aeroer" />
+							<img src="images/other/avatar-about.png" alt="Katen Doe" />
 						</div>
 						<div class="details">
 							<h4 class="name"><a href="#">Aeroer</a></h4>
@@ -247,7 +370,7 @@
 					<div class="comment-form rounded bordered padding-30">
 
 						<a href="webhostmost.html">
-							<button class="btn btn-default">Next Blog</button>
+							<button class="btn btn-default">Next Blog Coming Soon</button>
 						</a>
 					</div>
                 </div>
