@@ -2,9 +2,10 @@
 <html lang="en-US">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Google Drive : Web Hosting</title>
-	<meta name="keywords" content="Aeroer, Aeroer.Blog, Web-Hosting Blog, Web-Host, GoogleDrive, Website-Hosting">
-	<meta name="description" content="This blog focuses on web hosting, particularly how we can utilize Google Drive as our hosting server for our website.">
+	<title>Cloudflare Website Deployment</title>
+	<meta name="keywords" content="Aeroer, Aeroer.Blog, Cloudflare Blog, Cloudflare Website, Website-Hosting, Cloudflare & GitHub, Website Deployment, Cloudflare, GitHub, Cloudflare DNS, Cloudflare SSL, Cloudflare CDN, Cloudflare Page Rules, Cloudflare Firewall, Cloudflare Analytics, Cloudflare Speed, Cloudflare Cache, Cloudflare Web Analytics, Cloudflare Web Performance, Cloudflare Web Caching, Cloudflare Web Development, Cloudflare Web Hosting, Cloudflare Web Design, Cloudflare Web Development, Cloudflare Web Hosting, Cloudflare Web Design, Cloudflare Web Development, Cloudflare Web Hosting, Cloudflare Web Design, Cloudflare Web Development, Cloudflare Web Hosting, Cloudflare Web Design, Cloudflare Web Development, Cloudflare Web Hosting, Cloudflare Web Design, Cloudflare Web Development, Cloudflare Web Hosting, Cloudflare Web Design, Cloudflare Web Development, Cloudflare Web Hosting, Cloudflare Web Design, Cloudflare Web Development, Cloudflare Web Hosting, Cloudflare Web Design, Cloudflare Web Development, Cloudflare Web Hosting, Cloudflare Web Design">
+	<meta name="description" content="This guide will help you deploy your website for free using Cloudflare and GitHub.">
+	<meta name="author" content="Aeroer">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 
@@ -131,7 +132,7 @@
 </header>
 
 	<!-- cover header -->
-    <section class="single-cover data-bg-image" data-bg-image="images/posts/googledrivehosting.jpg">
+    <section class="single-cover data-bg-image" data-bg-image="images/posts/cloudflare&github.png">
 
         <div class="container-xl">
 
@@ -140,13 +141,13 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Aeroer Blog</a></li>
                         <li class="breadcrumb-item"><a href="#">Tech</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Google Drive : Web Hosting</li>
+                        <li class="breadcrumb-item active" aria-current="page">Cloudflare + GitHub</li>
                     </ol>
                 </nav>
 
                 <!-- post header -->
                 <div class="post-header">
-                    <h1 class="title mt-0 mb-3">How to use Google Drive as Web Hosting (Free)</h1>
+                    <h1 class="title mt-0 mb-3">How to deploy Website for free with cloudflare + GitHub</h1>
                 </div>
             </div>
 
@@ -165,66 +166,108 @@
                     <div class="post post-single">
 						<!-- post content -->
 						<div class="post-content clearfix">
-							<p>Hello everyone! Today, we're going to explore how to utilize Google Drive as our website hosting servers..</p>
+							<p>Deploying a website can sometimes seem like a complex process, but with the right tools, you can make it quick and hassle-free. In this guide, I’ll walk you through deploying a website for free using Cloudflare and GitHub.</p>
 
-							<p>We must have a Gmail account. It's advisable to create a new Gmail account specifically for use as a web server. Next, we need to create a folder inside our Google Drive where we can store our website files.</p>
+                            <h4>Create a Cloudflare Account</h4>
+
+                            <p>The first thing you need to do is sign up for a Cloudflare account. Head over to the <a href="https://dash.cloudflare.com/b0102294027f60375ed66c6c2a895b38" target="_blank">  Cloudflare Website </a>and create your account. During the signup process, choose the Free package to get access to their basic services, which are more than enough for most simple websites.</p>
 
 							<figure class="figure">
-								<img src="images/posts/googledrive.png" class="figure-img img-fluid rounded" alt="Google Drive Web Hosting">
-								<figcaption class="figure-caption text-center">Google Drive</figcaption>
+								<img src="images/posts/cloudflare+github.png" class="figure-img img-fluid rounded" alt="SEO Blog">
+								<figcaption class="figure-caption text-center">Cloudflare + Github </figcaption>
 							</figure>
 
-							<p>Afterward, we upload all the website files to our Google Drive folder.Now, we require a shareable link to this folder, ensuring that the <strong>access level</strong>  is set to <a href="#">"Anyone with the link."</a></p> 
+							<h4>Verify Your Cloudflare Account</h4>
 
-							<img src="images/posts/googlefolder.png" class="figure-img img-fluid rounded" alt="Web-Host Floder Share Link">
-							<figcaption class="figure-caption text-center">Floder Share Link</figcaption>
-							
-							<img src="images/posts/drivetoweb.jpg" class="rounded alignleft" alt="Google Drive To Web Host">
-							<br>
-							<p>Now, visit <a href="https://www.drv.tw/" target="_blank">https://www.drv.tw/</a></p>
+                            <figure class="figure"></figure>
+								<img src="images/posts/cloudflarehome.png" class="figure-img img-fluid rounded" alt="SEO Blog">
+								<figcaption class="figure-caption text-center">Cloudflare Home</figcaption>
+							</figure>
 
-							<p>Click on <a href="#">"Host on Google Drive,"</a> select your Gmail ID, then click on <a href="#">"Allow"</a> so that <strong>"Drive To Web"</strong> can access your Google Drive.</p>
+                            <p>After signing up, you’ll need to verify your account. This is a standard procedure to ensure your details are correct and to secure your account.</p>
 
-							<p>Now, please wait a few seconds for the process to complete. Afterward, we'll be able to see the <strong> Admin Panel </strong> page. Now, you should be able to locate our website link section under <strong>Your Web Pages</strong>.</p>
 
-							<img src="images/posts/admin.png" class="figure-img img-fluid rounded" alt="Web-Hosting Admin Panel">
-							<figcaption class="figure-caption text-center">Admin Panel</figcaption>
+							<h4>Navigating the Cloudflare Dashboard</h4>
 
-							<h3>Connecting a Custom Domain to the Website</h3>
+                            <figure class="figure"></figure>
+								<img src="images/posts/Cloudflare_work&pages.png" class="figure-img img-fluid rounded" alt="SEO Blog">
+								<figcaption class="figure-caption text-center">Cloudflare Home</figcaption>
+							</figure>
 
-							<p>Let's go to the register Where we bought our domain , in my case main is <a href="https://www.namecheap.com/" target="_blank">Namecheap.</a>
-							Then go to domain manage on the DNS Setting remove the current name server Afterward go to Advanced DNS, add new cName Record, On the host fild type <strong>www</strong> and on the value field past website URL from the "Drive To Web", remove the HTTPS prefix & remove everythings after drv.tw</p>
-							<img src="images/posts/namecheap.png" class="figure-img img-fluid rounded" alt="Namecheap Domain">
-							<figcaption class="figure-caption text-center">Namecheap</figcaption>
+                            <p>Once you’ve successfully logged in, you’ll be directed to the Cloudflare dashboard. Here’s where the magic happens. From the dashboard, navigate to the Workers & Pages section.</p>
 
-							<p>Set the TTL to 30 minutes and save changes</p>
+							<h4>Creating a New Project</h4>
 
-							<p>Now add another record, Select URL redriect on the host fild type <strong>@</strong> & on the value field type <strong>http://domain.com (Your Domain Name)</strong> Now save changes</p>
+                            <figure class="figure"></figure>
+                            <img src="images/posts/Creating_New_Project.png" class="figure-img img-fluid rounded" alt="SEO Blog">
+                            <figcaption class="figure-caption text-center">Cloudflare Dashboard</figcaption>
+                        </figure>
 
-							<h4>Done</h4>
+                            <p>Click on the Create button in the Workers & Pages section. This will start the process of setting up a new project for deployment.</p>
 
-							<p>Give some time maybe 1 Hours, Website will be live on your Domain </p>
+                            <figure class="figure"></figure>
+                            <img src="images/posts/Cloudflare_Pages.png" class="figure-img img-fluid rounded" alt="SEO Blog">
+                            <figcaption class="figure-caption text-center">Cloudflare Pages</figcaption>
+                            </figure>
 
-							<h5>My Youtube Blog : How to use Google Drive as Web Hosting</h5>
+							<h4>Connecting Your GitHub Account</h4>
+
+                            <figure class="figure"></figure>
+                            <img src="images/posts/github_login.png" class="figure-img img-fluid rounded" alt="SEO Blog">
+                            <figcaption class="figure-caption text-center">Cloudflare Github</figcaption>
+                            </figure>
+
+
+                            <p>In this next step, you’ll be asked to connect your GitHub account. If you’re reading this, I assume you already have a GitHub account. If not, you’ll need to create one and host your project on a GitHub repository.</p>
+
+                            <p>Once you’ve connected your GitHub account to Cloudflare, you’ll be able to see a list of all your repositories right within Cloudflare’s dashboard. This makes it easy to pick the project you want to deploy.</p>
+
+                            <h4>Selecting Your Project for Deployment</h4>
+
+                            <figure class="figure"></figure>
+                            <img src="images/posts/Github_Projects.png" class="figure-img img-fluid rounded" alt="SEO Blog">
+                            <figcaption class="figure-caption text-center">Github Projects</figcaption>
+                            </figure>
+                            
+                            <p>Now that your GitHub account is linked, simply select the repository for the project you wish to deploy. After choosing the correct repository, click the Deploy button.</p>
+
+                            <h4>Deployment Process</h4>
+
+                            <p>Once you hit deploy, Cloudflare will begin the process of building and deploying your website. This may take a few minutes, so sit tight.</p>
+
+                            <p>At the end of this process, you might encounter a message that says: “It looks like we’re having some internal issues.” Don’t panic! This is a known bug within Cloudflare, and your project has likely been deployed successfully despite the error message.</p>
+
+                            <figure class="figure"></figure>
+                            <img src="images/posts/Cloudflare_error.png" class="figure-img img-fluid rounded" alt="SEO Blog">
+                            <figcaption class="figure-caption text-center">Cloudflare Error</figcaption>
+                            </figure>
+
+                            <h4>Checking Your Deployed Website</h4>
+
+                            <p>Wait about 5 to 10 minutes after seeing the error message. Then, navigate back to the Cloudflare dashboard and head to the Workers & Pages section again. You should now see a link to your deployed website.</p>
+
+                            <P>And that’s it! Your website is now live</P>
+
+                            <h5>My Youtube Blog : Deploy your website for free with Cloudflare Github</h5>
 							<div class="video-container">
 								<iframe width="560" height="315" 
-									src="https://www.youtube.com/embed/7tFK4ZPjvT8?si=DR1w8NBE2eJhj82e" 
+									src="https://www.youtube.com/embed/EtbOu2O6fG0?si=ICeO1CJ547WO4W7x" 
 									title="YouTube video player" frameborder="0" 
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 									referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 								</iframe>
 							</div>
 
-							
+
 						</div>
 						<!-- post bottom section -->
 						<div class="post-bottom">
 							<div class="row d-flex align-items-center">
 								<div class="col-md-6 col-12 text-center text-md-start">
 									<!-- tags -->
-									<a href="#" class="tag">#WebHost</a>
+									<a href="#" class="tag">#Web Development</a>
 									<a href="#" class="tag">#TechBlog</a>
-									<a href="#" class="tag">#FreeHosting</a>
+									<a href="#" class="tag">#Html Form</a>
 								</div>
 
 							</div>
@@ -236,7 +279,7 @@
 
 					<div class="about-author padding-30 rounded">
 						<div class="thumb">
-							<img src="images/other/avatar-about.png" alt="Aeroer" />
+							<img src="images/other/avatar-about.png" alt="Katen Doe" />
 						</div>
 						<div class="details">
 							<h4 class="name"><a href="#">Aeroer</a></h4>
@@ -258,7 +301,7 @@
 					<div class="comment-form rounded bordered padding-30">
 
 						<a href="webhostmost.html">
-							<button class="btn btn-default">Next Blog</button>
+							<button class="btn btn-default">Next Blog Coming Soon</button>
 						</a>
 					</div>
                 </div>
@@ -366,13 +409,13 @@
 							</div>		
 						</div>
 
-						 <!-- widget advertisement -->
-						<div class="widget no-container rounded text-md-center">
-							<span class="ads-title">- Sponsored Ad -</span>
-							<a href="https://aeroer.live/businessemail" target="_blank" class="widget-ads">
-								<img src="images/ads/Eamil.png" alt="Advertisement" />	
-							</a>
-						</div>
+<!-- widget advertisement -->
+<div class="widget no-container rounded text-md-center">
+	<span class="ads-title">- Sponsored Ad -</span>
+	<a href="https://aeroer.live/businessemail" target="_blank" class="widget-ads">
+		<img src="images/ads/Eamil.png" alt="Advertisement"/>	
+	</a>
+</div>
 
 						<!-- widget tags -->
 						<!-- <div class="widget rounded">
@@ -384,8 +427,6 @@
 								<a href="#" class="tag">#Trending</a>
 								<a href="#" class="tag">#Video</a>
 								<a href="#" class="tag">#Featured</a>
-								<a href="#" class="tag">#Gallery</a>
-								<a href="#" class="tag">#Celebrities</a>
 							</div>		
 						</div> -->
 
